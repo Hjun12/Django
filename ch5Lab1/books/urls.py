@@ -23,5 +23,6 @@ urlpatterns = [
     path('author/<int:pk>/', views.AuthorDetail.as_view(), name='author_detail'),
 
     # /books/publisher/99/
-    path('publisher/<int:pk>/', views.PublisherDetail.as_view(), name='publisher_detail'),
+    path('publisher/<int:pk>/', views.PublisherDetail.as_view(),
+         name='publisher_detail'),
 ]
